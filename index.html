@@ -283,13 +283,57 @@ workout plans designed for every fitness level.
 </div>
 
 <div class="contact-card">
-    <i class="fas fa-location-dot"></i>
-    <h3>Location</h3>
-    <p>Based in Pakistan • Serving Worldwide</p>
+<i class="fas fa-location-dot"></i>
+<h3>Location</h3>
+<p>Based in Pakistan • Serving Worldwide</p>
 </div>
 
-</div> 
-</div> 
+</div>
+
+<form class="reservation-form"
+      action="https://formspree.io/f/mzdnjabj"
+      method="POST">
+
+    <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required>
+
+    <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required>
+
+    <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number"
+        required>
+
+    <select name="service" required>
+        <option value="">Select Service</option>
+        <option>Gym Membership</option>
+        <option>Personal Training</option>
+        <option>Nutrition Plan</option>
+        <option>General Inquiry</option>
+    </select>
+
+    <textarea
+        name="message"
+        rows="5"
+        placeholder="Tell us how we can help..."
+        required></textarea>
+
+    <button class="btn" type="submit">
+        Send Message
+    </button>
+
+</form>
+
+</div>
+
 </section>
 
   <!-- ================= FOOTER ================= -->
