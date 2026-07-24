@@ -1,69 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
 
-<title>FitZone | Fitness Gym</title>
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0d0d0d;
+    color:#fff;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+/* ================= NAVBAR ================= */
 
-<link rel="stylesheet" href="style.css">
-</head>
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(10px);
+}
 
-<body>
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+}
 
-<header>
+.nav h2{
+    font-size:2rem;
+    font-weight:700;
+}
 
-<div class="container nav">
+.nav span{
+    color:#39FF14;
+}
 
-<h2>Fit<span>Zone</span></h2>
+nav{
+    display:flex;
+    gap:30px;
+}
 
-<nav id="nav">
+nav a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
 
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#programs">Programs</a>
-<a href="#trainers">Trainers</a>
-<a href="#contact">Contact</a>
+nav a:hover{
+    color:#39FF14;
+}
 
-</nav>
+#menuBtn{
+    display:none;
+    font-size:1.7rem;
+    cursor:pointer;
+}
 
-<div id="menuBtn">
-<i class="fas fa-bars"></i>
-</div>
+/* ================= HERO ================= */
 
-</div>
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
 
-</header>
+.hero-content{
+    max-width:750px;
+}
 
-<section class="hero">
+.hero h4{
+    color:#39FF14;
+    margin-bottom:15px;
+    font-size:1.2rem;
+}
 
-<div class="hero-content">
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
 
-<h4>Train Hard. Stay Strong.</h4>
+.hero p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:35px;
+}
 
-<h1>Build Your Dream Body Today</h1>
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#39FF14;
+    color:#111;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:700;
+    transition:.3s;
+}
 
-<p>
-Join FitZone and transform your body with
-professional trainers, modern equipment,
-and personalized fitness programs.
-</p>
+.btn:hover{
+    transform:translateY(-4px);
+}
 
-<a href="#programs" class="btn">
-Join Now
-</a>
+/* ================= MOBILE ================= */
 
-</div>
+@media(max-width:768px){
 
-</section>
+nav{
+    position:absolute;
+    top:80px;
+    left:-100%;
+    width:100%;
+    background:#111;
+    flex-direction:column;
+    text-align:center;
+    padding:30px 0;
+    transition:.4s;
+}
 
-<script src="script.js"></script>
+nav.active{
+    left:0;
+}
 
-</body>
-</html>
+#menuBtn{
+    display:block;
+}
+
+.hero h1{
+    font-size:2.6rem;
+}
+
+.hero p{
+    font-size:.95rem;
+}
+
+}
