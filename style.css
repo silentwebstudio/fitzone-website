@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>FitZone | Fitness Gym</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="container nav">
+
+<h2>Fit<span>Zone</span></h2>
+
+<nav id="nav">
+
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#programs">Programs</a>
+<a href="#trainers">Trainers</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div id="menuBtn">
+<i class="fas fa-bars"></i>
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h4>Train Hard. Stay Strong.</h4>
+
+<h1>Build Your Dream Body Today</h1>
+
+<p>
+Join FitZone and transform your body with
+professional trainers, modern equipment,
+and personalized fitness programs.
+</p>
+
+<a href="#programs" class="btn">
+Join Now
+</a>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
